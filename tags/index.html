@@ -89,7 +89,7 @@
 <meta name="keywords" content="福家田 , 富甲天">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
-<meta property="og:url" content="https://blog.fujiatian.com/tags/index.html">
+<meta property="og:url" content="https://isme.fujiatian.com/tags/index.html">
 <meta property="og:site_name" content="福家田">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-04-07T05:01:15.877Z">
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="https://blog.fujiatian.com/tags/">
+  <link rel="canonical" href="https://isme.fujiatian.com/tags/">
 
 
 
@@ -320,6 +320,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -631,6 +634,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'obhqJKs2Nwf0txxQvqAi2Vtb-gzGzoHsz',
+        appKey: 'R9IWJ0qoNfex50LVW6Y1KDah',
+        placeholder: 'ヾﾉ≧∀≦)o 来呀！吐槽一番吧！',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

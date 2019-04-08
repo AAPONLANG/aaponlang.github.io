@@ -13,25 +13,25 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[福家田]]></title>
-    <url>%2F2019%2F04%2F07%2F%E7%A6%8F%E5%AE%B6%E7%94%B0%2F</url>
-    <content type="text"><![CDATA[这是我的第一个 Hexo 页面不知道这样对不对？ 不知道这样对不对？ 不知道这样对不对？ 不知道这样对不对？ console.log(&quot;hello,world&quot;);这是一个 chrome 浏览器调试的常用指令 福家田]]></content>
-      <categories>
-        <category>阅读</category>
-      </categories>
-      <tags>
-        <tag>关于</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[跺码归福家田]]></title>
-    <url>%2F2019%2F04%2F07%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[孔雀东南飞，五里一徘徊. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <url>%2F2019%2F04%2F07%2F%E8%B7%BA%E7%A0%81%E5%BD%92%E7%A6%8F%E5%AE%B6%E7%94%B0%2F</url>
+    <content type="text"><![CDATA[孔雀东南飞，五里一徘徊. 我行过许多地方的桥，看过许多次数的云，喝过许多种类的酒，却只爱过一个正当最好年龄的人。 所谓美丽鸡鸣外欲曙，新妇起严妆。著我绣夹裙，事事四五通。足下蹑丝履，头上玳瑁光。腰若流纨素，耳著明月珰。指如削葱根，口如含朱丹。纤纤作细步，精妙世无双。]]></content>
       <categories>
         <category>阅读</category>
       </categories>
       <tags>
         <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F04%2F07%2F%E7%A6%8F%E5%AE%B6%E7%94%B0Hello-World%2F</url>
+    <content type="text"><![CDATA[这是我的第一个 Hexo 页面 此页面是第一个 Hexo 的第一个页面，仅留作纪念 福家田]]></content>
+      <categories>
+        <category>阅读</category>
+      </categories>
+      <tags>
+        <tag>关于</tag>
       </tags>
   </entry>
 </search>
