@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="关于,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -86,18 +86,22 @@
 
 
 
-<meta name="description" content="这是我的第一个 Hexo 页面 此页面是第一个 Hexo 的第一个页面，仅留作纪念   福家田">
-<meta name="keywords" content="关于">
+<meta name="description" content="数据库索引 索引的原理  要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是b tree或者b+ tree，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用哈希桶作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的  索引的直观感受  索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下降（">
+<meta name="keywords" content="福家田 , 富甲天">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://isme.fujiatian.com/2019/04/07/福家田Hello-World/index.html">
+<meta property="og:title" content="数据库索引">
+<meta property="og:url" content="https://isme.fujiatian.com/2019/04/18/数据库索引/index.html">
 <meta property="og:site_name" content="福家田">
-<meta property="og:description" content="这是我的第一个 Hexo 页面 此页面是第一个 Hexo 的第一个页面，仅留作纪念   福家田">
+<meta property="og:description" content="数据库索引 索引的原理  要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是b tree或者b+ tree，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用哈希桶作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的  索引的直观感受  索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下降（">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-08T14:58:24.507Z">
+<meta property="og:image" content="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331183916477-93039637.jpg">
+<meta property="og:image" content="en-resource://database/1582:1">
+<meta property="og:image" content="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331184008805-68908020.jpg">
+<meta property="og:updated_time" content="2019-04-18T13:31:35.272Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="这是我的第一个 Hexo 页面 此页面是第一个 Hexo 的第一个页面，仅留作纪念   福家田">
+<meta name="twitter:title" content="数据库索引">
+<meta name="twitter:description" content="数据库索引 索引的原理  要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是b tree或者b+ tree，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用哈希桶作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的  索引的直观感受  索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下降（">
+<meta name="twitter:image" content="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331183916477-93039637.jpg">
 
 
 
@@ -127,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="https://isme.fujiatian.com/2019/04/07/福家田Hello-World/">
+  <link rel="canonical" href="https://isme.fujiatian.com/2019/04/18/数据库索引/">
 
 
 
 
 
-  <title>Hello World | 福家田</title>
+  <title>数据库索引 | 福家田</title>
   
 
 
@@ -292,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://isme.fujiatian.com/2019/04/07/福家田Hello-World/">
+    <link itemprop="mainEntityOfPage" href="https://isme.fujiatian.com/2019/04/18/数据库索引/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="田园野望者">
@@ -309,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">数据库索引</h1>
         
 
         <div class="post-meta">
@@ -321,8 +325,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-07T14:09:22+08:00">
-                2019-04-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-18T21:26:15+08:00">
+                2019-04-18
               </time>
             
 
@@ -332,28 +336,6 @@
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/阅读/" itemprop="url" rel="index">
-                    <span itemprop="name">阅读</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -362,8 +344,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/04/07/福家田Hello-World/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/07/福家田Hello-World/" itemprop="commentCount"></span>
+                <a href="/2019/04/18/数据库索引/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/18/数据库索引/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -390,7 +372,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  32
+                  2.7k
                 </span>
               
 
@@ -406,7 +388,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  9
                 </span>
               
             </div>
@@ -427,11 +409,68 @@
       
 
       
-        <h1 id="这是我的第一个-Hexo-页面"><a href="#这是我的第一个-Hexo-页面" class="headerlink" title="这是我的第一个 Hexo 页面"></a>这是我的第一个 Hexo 页面</h1><blockquote>
-<p>此页面是第一个 Hexo 的第一个页面，仅留作纪念</p>
+        <h1 id="数据库索引"><a href="#数据库索引" class="headerlink" title="数据库索引"></a>数据库索引</h1><blockquote>
+<p>索引的原理</p>
 </blockquote>
-<hr>
-<p><a href="https://fujiatian.com" target="_blank" rel="noopener">福家田</a></p>
+<p>要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是<code>b tree</code>或者<code>b+ tree</code>，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用<code>哈希桶</code>作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的</p>
+<blockquote>
+<p>索引的直观感受</p>
+</blockquote>
+<p>索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下降（其实是对数据的增删改都会变慢）</p>
+<h4 id="1、为什么要给表加上主键？"><a href="#1、为什么要给表加上主键？" class="headerlink" title="1、为什么要给表加上主键？"></a>1、为什么要给表加上主键？</h4><blockquote>
+<p>平时建表的时候都会为表加上主键， 在某些关系数据库中， 如果建表时不指定主键，数据库会拒绝建表的语句执行。<br>事实上， 一个加了主键的表，并不能被称之为「表」。<br>一个没加主键的表，它的数据无序的放置在磁盘存储器上，一行一行的排列的很整齐， 跟我认知中的「表」很接近。</p>
+</blockquote>
+<blockquote>
+<p>这就是为什么一个表只能有一个主键， 一个表只能有一个「聚集索引」，因为主键的作用就是把「表」的数据格式转换成「索引（平衡树）」的格式放置。</p>
+</blockquote>
+<p><img src="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331183916477-93039637.jpg" alt="带主键的数据库表的存储结构（平衡树）"></p>
+<blockquote>
+<p>建索引的缺点</p>
+</blockquote>
+<p>每次给字段建一个新索引， 字段中的数据就会被复制一份出来， 用于生成索引。 因此， 给表添加索引，会增加表的体积， 占用磁盘存储空间<br>不管以任何方式查询表， 最终都会利用主键通过聚集索引来定位到数据， 聚集索引（主键）是通往真实数据所在的唯一路径。然而， 有一种例外可以不使用聚集索引就能查询出所需要的数据， 这种非主流的方法 称之为「覆盖索引」查询， 也就是平时所说的复合索引或者多字段索引查询。 文章上面的内容已经指出， 当为字段建立索引以后， 字段中的内容会被同步到索引之中， 如果为一个索引指定两个字段， 那么这个两个字段的内容都会被同步至索引之中。</p>
+<h4 id="2、为什么加索引后会使查询变快？"><a href="#2、为什么加索引后会使查询变快？" class="headerlink" title="2、为什么加索引后会使查询变快？"></a>2、为什么加索引后会使查询变快？</h4><p>假如一张表有一亿条数据 ，需要查找其中某一条数据，按照常规逻辑， 一条一条的去匹配的话， 最坏的情况下需要匹配一亿次才能得到结果，用大 O 标记法就是 O(n)最坏时间复杂度，这是无法接受的，而且这一亿条数据显然不能一次性读入内存供程序使用， 因此， 这一亿次匹配在不经缓存优化的情况下就是一亿次 IO 开销，以现在磁盘的 IO 能力和 CPU 的运算能力， 有可能需要几个月才能得出结果 。如果把这张表转换成平衡树结构（一棵非常茂盛和节点非常多的树），假设这棵树有 10 层，那么只需要 10 次 IO 开销就能查找到所需要的数据， 速度以指数级别提升，用大 O 标记法就是 O(log n)，n 是记录总树，底数是树的分叉数，结果就是树的层次数。换言之，查找次数是以树的分叉数为底，记录总数的对数，用公式来表示就是<img src="en-resource://database/1582:1" alt="5eabab3bf4e55cadbe01107902988562.png"><br>用程序来表示就是 Math.Log(100000000,10)，100000000 是记录数，10 是树的分叉数（真实环境下分叉数远不止 10）， 结果就是查找次数，这里的结果从亿降到了个位数。因此，利用索引会使数据库查询有惊人的性能提升。</p>
+<h4 id="3、为什么加索引后会使写入、修改、删除变慢？"><a href="#3、为什么加索引后会使写入、修改、删除变慢？" class="headerlink" title="3、为什么加索引后会使写入、修改、删除变慢？"></a>3、为什么加索引后会使写入、修改、删除变慢？</h4><blockquote>
+<p>每次给字段建一个新索引， 字段中的数据就会被复制一份出来， 用于生成索引。 因此， 给表添加索引，会增加表的体积， 占用磁盘存储空间</p>
+</blockquote>
+<blockquote>
+<p>索引能让数据库查询数据的速度上升， 而使写入数据的速度下降，原因很简单的， 因为平衡树这个结构必须一直维持在一个正确的状态， 增删改数据都会改变平衡树各节点中的索引数据内容，破坏树结构，<br>因此，在每次数据改变时， DBMS 必须去重新梳理树（索引）的结构以确保它的正确，这会带来不小的性能开销，也就是为什么索引会给查询以外的操作带来副作用的原因。</p>
+</blockquote>
+<h4 id="4、什么情况下要同时在两个字段上建索引？"><a href="#4、什么情况下要同时在两个字段上建索引？" class="headerlink" title="4、什么情况下要同时在两个字段上建索引？"></a>4、什么情况下要同时在两个字段上建索引？</h4><blockquote>
+<p>待补充</p>
+</blockquote>
+<h4 id="5、聚集索引和非聚集索引？"><a href="#5、聚集索引和非聚集索引？" class="headerlink" title="5、聚集索引和非聚集索引？"></a>5、聚集索引和非聚集索引？</h4><blockquote>
+<p><code>「聚集索引」</code></p>
+</blockquote>
+<p>如果给表上了主键，那么表在磁盘上的存储结构就由整齐排列的结构转变成了树状结构，也就是上面说的<code>「平衡树」</code>结构，换句话说，就是整个表就变成了一个索引。<br>没错， 再说一遍， 整个表变成了一个索引，也就是所谓的<code>「聚集索引」</code>。</p>
+<blockquote>
+<p><code>「非聚集索引」</code></p>
+</blockquote>
+<p>非聚集索引和聚集索引一样， 同样是采用平衡树作为索引的数据结构。索引树结构中各节点的值来自于表中的索引字段， 假如给 user 表的 name 字段加上索引 ， 那么索引就是由 name 字段中的值构成，在数据改变时， DBMS 需要一直维护索引结构的正确性。如果给表中多个字段加上索引 ， 那么就会出现多个独立的索引结构，每个索引（非聚集索引）互相之间不存在关联。</p>
+<p><img src="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331184008805-68908020.jpg" alt="带有主键和三个非聚集索引的表的存储结构"></p>
+<blockquote>
+<p>非聚集索引和聚集索引的区别</p>
+</blockquote>
+<p>聚集索引可以查到需要查找的数据， 而通过非聚集索引可以查到记录对应的主键值 ， 再使用主键的值通过聚集索引查找到需要的数据</p>
+<p>不管以任何方式查询表， 最终都会利用主键通过聚集索引来定位到数据， 聚集索引（主键）是通往真实数据所在的唯一路径</p>
+<p>然而， 有一种例外可以不使用<code>聚集索引</code>就能查询出所需要的数据， 这种非主流的方法 称之为「覆盖索引」查询， 也就是平时所说的复合索引或者多字段索引查询。 文章上面的内容已经指出， 当为字段建立索引以后， 字段中的内容会被同步到索引之中， 如果为一个索引指定两个字段， 那么这个两个字段的内容都会被同步至索引之中</p>
+<blockquote>
+<p>索引的查询过程</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//建立索引create index index_birthday on user_info(birthday);</span><br><span class="line">//查询生日在1991年11月1日出生用户的用户名</span><br><span class="line">select user_name from user_info where birthday = &apos;1991-11-1&apos;</span><br></pre></td></tr></table></figure>
+<p>这句 SQL 语句的执行过程如下首先，通过非聚集索引<code>index_birthday</code>查找<code>birthday</code>等于 1991-11-1 的所有记录的主键 ID 值然后，通过得到的主键 ID 值执行聚集索引查找，找到主键 ID 值对就的真实数据（数据行）存储的位置<br>最后， 从得到的真实数据中取得 user_name 字段的值返回， 也就是取得最终的结果我们把 birthday 字段上的索引改成双字段的覆盖索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create index index_birthday_and_user_name on user_info(birthday, user_name);</span><br></pre></td></tr></table></figure>
+<p>这句 SQL 语句的执行过程就会变为<br>通过非聚集索引<code>index_birthday_and_user_name</code>查找<code>birthday</code>等于 1991-11-1 的叶节点的内容，然而， 叶节点中除了有 user_name 表主键 ID 的值以外， user_name 字段的值也在里面， 因此不需要通过主键 ID 值的查找数据行的真实所在， 直接取得叶节点中 user_name 的值返回即可。 通过这种覆盖索引直接查找的方式， 可以省略不使用覆盖索引查找的后面两个步骤， 大大的提高了查询性能，如下图!</p>
+<h4 id="什么时候需要建索引"><a href="#什么时候需要建索引" class="headerlink" title="什么时候需要建索引"></a>什么时候需要建索引</h4><p>(来源于百度知道)</p>
+<blockquote>
+<p>1、表的主键、外键必须有索引；<br>2、数据量超过 300 的表应该有索引；<br>3、经常与其他表进行连接的表，在连接字段上应该建立索引；<br>4、经常出现在 Where 子句中的字段，特别是大表的字段，应该建立索引；<br>5、索引应该建在选择性高的字段上；<br>6、索引应该建在小字段上，对于大的文本字段甚至超长字段，不要建索引；<br>7、复合索引的建立需要进行仔细分析；尽量考虑用单字段索引代替：</p>
+</blockquote>
+<p>A、正确选择复合索引中的主列字段，一般是选择性较好的字段；<br>B、复合索引的几个字段是否经常同时以 AND 方式出现在 Where 子句中？单字段查询是否极少甚至没有？如果是，则可以建立复合索引；否则考虑单字段索引；<br>C、如果复合索引中包含的字段经常单独出现在 Where 子句中，则分解为多个单字段索引；<br>D、如果复合索引所包含的字段超过 3 个，那么仔细考虑其必要性，考虑减少复合的字段；<br>E、如果既有单字段索引，又有这几个字段上的复合索引，一般可以删除复合索引；</p>
+<blockquote>
+<p>8、频繁进行数据操作的表，不要建立太多的索引；<br>9、删除无用的索引，避免对执行计划造成负面影响；<br>以上是一些普遍的建立索引时的判断依据。<br>一言以蔽之，索引的建立必须慎重，对每个索引的必要性都应该经过仔细分析，要有建立的依据。因为太多的索引与不充分、不正确的索引对性能都毫无益处：在表上建立的每个索引都会增加存储开销，索引对于插入、删除、更新操作也会增加处理上的开销。另外，过多的复合索引，在有单字段索引的情况下，一般都是没有存在价值的；相反，还会降低数据增加删除时的性能，特别是对频繁更新的表来说，负面影响更大。</p>
+</blockquote>
+<blockquote>
+<p>总得来讲：当修改性能远远大于检索心梗时，不应该创建索引</p>
+</blockquote>
 
       
     </div>
@@ -476,12 +515,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/关于/" rel="tag"># 关于</a>
-          
-        </div>
-      
 
       
       
@@ -491,14 +524,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/04/18/单例/" rel="next" title="单例模式的微总结">
+                <i class="fa fa-chevron-left"></i> 单例模式的微总结
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/07/跺码归福家田/" rel="prev" title="跺码归福家田">
-                跺码归福家田 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/04/18/a标签/" rel="prev" title="a标签的妙用">
+                a标签的妙用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -684,7 +721,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#这是我的第一个-Hexo-页面"><span class="nav-number">1.</span> <span class="nav-text">这是我的第一个 Hexo 页面</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库索引"><span class="nav-number">1.</span> <span class="nav-text">数据库索引</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、为什么要给表加上主键？"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1、为什么要给表加上主键？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、为什么加索引后会使查询变快？"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2、为什么加索引后会使查询变快？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、为什么加索引后会使写入、修改、删除变慢？"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3、为什么加索引后会使写入、修改、删除变慢？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、什么情况下要同时在两个字段上建索引？"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4、什么情况下要同时在两个字段上建索引？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、聚集索引和非聚集索引？"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">5、聚集索引和非聚集索引？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么时候需要建索引"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">什么时候需要建索引</span></a></li></ol></li></ol></div>
             
 
           </div>
