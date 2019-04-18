@@ -55,4 +55,9 @@
         <tag>关于</tag>
       </tags>
   </entry>
+  <entry>
+    <title><![CDATA[谈情说爱]]></title>
+    <url>%2F2019%2F04%2F06%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[爱情是什么东西，我是真的不明白 Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
 </search>
