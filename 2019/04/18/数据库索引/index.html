@@ -86,23 +86,23 @@
 
 
 
-<meta name="description" content="数据库索引 索引的原理  要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是b tree或者b+ tree，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用哈希桶作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的  索引的直观感受  索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下降（">
+<meta name="description" content="数据库索引 索引的原理  要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是b tree或者b+ tree，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用哈希桶作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的  索引的直观感受  索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下">
 <meta name="keywords" content="福家田 , 富甲天">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库索引">
 <meta property="og:url" content="https://isme.fujiatian.com/2019/04/18/数据库索引/index.html">
 <meta property="og:site_name" content="福家田">
-<meta property="og:description" content="数据库索引 索引的原理  要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是b tree或者b+ tree，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用哈希桶作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的  索引的直观感受  索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下降（">
+<meta property="og:description" content="数据库索引 索引的原理  要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是b tree或者b+ tree，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用哈希桶作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的  索引的直观感受  索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331183916477-93039637.jpg">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331183940836-1426600354.png">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331184008805-68908020.jpg">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331184024758-1937607304.jpg">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331184049867-1554738501.jpg">
-<meta property="og:updated_time" content="2019-04-18T13:45:23.713Z">
+<meta property="og:updated_time" content="2019-04-18T13:59:14.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库索引">
-<meta name="twitter:description" content="数据库索引 索引的原理  要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是b tree或者b+ tree，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用哈希桶作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的  索引的直观感受  索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下降（">
+<meta name="twitter:description" content="数据库索引 索引的原理  要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是b tree或者b+ tree，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用哈希桶作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的  索引的直观感受  索引会提升查询数据库的速度，但是在访问量大，高并发的情况下，会导致写入数据时性能下">
 <meta name="twitter:image" content="https://images2015.cnblogs.com/blog/303980/201703/303980-20170331183916477-93039637.jpg">
 
 
@@ -411,7 +411,9 @@
       
 
       
-        <h1 id="数据库索引"><a href="#数据库索引" class="headerlink" title="数据库索引"></a>数据库索引</h1><blockquote>
+        <meta name="referrer" content="no-referrer">
+
+<h1 id="数据库索引"><a href="#数据库索引" class="headerlink" title="数据库索引"></a>数据库索引</h1><blockquote>
 <p>索引的原理</p>
 </blockquote>
 <p>要理解索引原理必须清楚一种数据结构「平衡树」(非二叉)，也就是<code>b tree</code>或者<code>b+ tree</code>，重要的事情说三遍：“平衡树，平衡树，平衡树”， 当然， 有的数据库也使用<code>哈希桶</code>作用索引的数据结构 ， 然而， 主流的 RDBMS 都是把平衡树当做数据表默认的索引数据结构的</p>
