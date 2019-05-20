@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[今天是五月二十号]]></title>
+    <url>%2F2019%2F05%2F20%2F%E4%BB%8A%E5%A4%A9%E6%98%AF%E4%BA%94%E6%9C%88%E4%BA%8C%E5%8D%81%E5%8F%B7%2F</url>
+    <content type="text"><![CDATA[今天是五月二十号在这个不冷不热的五月，今年已将近过半，前天开始进入了生命的第三轮的旅程，不知道是从什么时候开始，害怕家人突然的关心，害怕他们对我的感情生活的关心和打听。 我理解他们对我的焦虑，可是他们不懂我的迷茫啊，我不想过那种没有希望的生活，我觉得自己还没有足够的能力，去许诺另一个人的未来，我不想做没有把握的承诺。我爸跟我讲过，说有两个人一起奋斗会更好。从小就是一个人自立自强的我不敢相信有这种人存在，所以我直接回答，现在这个社会不是你们那时候了，那种纯真纯正的感情是现在这个快餐式爱情社会的极度奢侈品吧。 什么是快餐式爱情？我的大致理解就是，在网上看过几次照片，聊过几次语音，如此尔尔，就宣布“爱了”，真的是快乐就完事了。 我保存着相信，我更保持着理性！ 还有朋友分享他的感情生活，比如相亲等等话题了，我始终保持祝福，也始终相信，好的人也终遇良人，一定会美满幸福。我的态度是，虽然有点羡慕有人那么幸运能够在生命很早的时候就遇到对的人，但是我并不“酸”，因为相信这是上天最好的安排。或你，或他，既是如此。 我虽是感性的人，但理性始终大于感性。 最后，我为啥会写这个文章呢，是因为我想维护一下我的网站了，好久没有弄我的 hexo 了，之前将它放到自己的服务器了，还有诸多不良之处，等慢慢修改吧。]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[a标签的妙用]]></title>
     <url>%2F2019%2F04%2F18%2Fa%E6%A0%87%E7%AD%BE%2F</url>
     <content type="text"><![CDATA[a 标签的妙用最近写了一个静态页面的项目，发现 a 标签在手机端的一些其他的用途，为自己做一个总结 1、a 标签可以直接拨打电话 1、这里最常用的是用tel 来调用拨打电话的功能，属于 H5 的一些特性 1&lt;a href="tel:10086"&gt;10086&lt;/a&gt; //点击后直接拨打10086 如果要支持 safari for ios ，blackberry browser 的号码，需要加上一下标签，目的是自动探测电话号码 1234&lt;meta name="format-detection" content="telephone=no" /&gt;&lt;meta http-equiv="x-rim-auto-match" content="none"/&gt; 2、使用 wtai 协议进行拨打电话。 在 wml 中可以调用设备的 wtai 函数来呼叫特定的电话号码。目前，越来越多的浏览器都支持这个功能，但还不是所有。 123＜input name="phone_no" format="*m" value="13"/＞ ＜do type="option"label="呼出号"＞ ＜go href="wtai://wp/mc;$(phone_no)"/＞ ＜/do＞＜br/＞ //或者直接写入电话号码的方式： ＜a href="wtai://wp/mc;1331597312*"＞拨打电话＜/a＞ 另一种方式是这么写的 1&lt;a href="dc:5040*0077"&gt;拨打热线&lt;/a&gt; 2、a 标签发邮件这里我只用到了这种写法 12&lt;a href="mailto:test@qq.com?subject=TestObject"&gt;c6088@qq.com&lt;/a&gt;//点击后直接给c1586@qq.com发邮件，主题为：TestObject 3、a 标签发短信这里我只用到了这种写法 12&lt;a href="sms:10086?body=message_body"&gt;给 10086 发短信&lt;/a&gt;//点击后直接给10086发信息，消息内容默认为message_body 4、a 标签定位置（调用地图）这个我没有写,相比其他的几个功能,这个更麻烦吧,我没有实际使用 123&lt;a href="geopoint:116.281469,39.866035"&gt;我的位置&lt;/a&gt; //点击后直接发送自己的位置&lt;a href="geopoint:经度,纬度"&gt;我的位置&lt;/a&gt;// 这个直接搜索一些当前需要定位置的坐标就好了 3、a 标签当做下载链接这里我只用到了这种写法 1234&lt;a href="img/aa.png" download="WC.png"&gt;点击下载链接&lt;/a&gt;//href中只需要放上图片的链接，其实就是放需要下载的资源可以是zip，doc等等，不限文件的,如下面这种写法&lt;a href="content/test.zip" download="test.zip"&gt;点击下载链接&lt;/a&gt;]]></content>
