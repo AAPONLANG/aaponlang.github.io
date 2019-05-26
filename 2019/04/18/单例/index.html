@@ -18,8 +18,8 @@
   
     
     
-  <script src="/hexo/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/hexo/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -47,7 +47,7 @@
 
   
   
-  <link href="/hexo/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -55,21 +55,21 @@
 
 
 
-<link href="/hexo/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/hexo/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/hexo/images/apple-touch-icon-next.png?v=5.1.4">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/hexo/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/hexo/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
 
 
-  <link rel="mask-icon" href="/hexo/images/logo.svg?v=5.1.4" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
 
 
 
@@ -90,7 +90,7 @@
 <meta name="keywords" content="福家田 , 富甲天">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单例模式的微总结">
-<meta property="og:url" content="https://isme.fujiatian.com/2019/04/18/单例/index.html">
+<meta property="og:url" content="https://www.fujiatian.com/2019/04/18/单例/index.html">
 <meta property="og:site_name" content="FuJiaTian">
 <meta property="og:description" content="[TOC] 单例模式 什么是单例模式？  单例模式是指确保一个类只有一个实例，提供一个全局访问点，不需要实例化这个类，直接调用其方法即可 1、具体步骤是1、将类的构造函数生命为私有的构造函数，在外部就不能通过Test a= new Test()来实例化，用Private字段限制只能在内部可以实例，外部不能访问。2、在类的里面声明一个用static修饰的公开的全局静态字段（这里就是提供给外部的唯一访">
 <meta property="og:locale" content="zh-Hans">
@@ -104,7 +104,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/hexo/',
+    root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="https://isme.fujiatian.com/2019/04/18/单例/">
+  <link rel="canonical" href="https://www.fujiatian.com/2019/04/18/单例/">
 
 
 
@@ -161,7 +161,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/hexo/" class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">FuJiaTian</span>
         <span class="logo-line-after"><i></i></span>
@@ -189,7 +189,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/hexo/" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
@@ -199,7 +199,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/hexo/tags/" rel="section">
+          <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
@@ -209,7 +209,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/hexo/categories/" rel="section">
+          <a href="/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
@@ -219,7 +219,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/hexo/archives/" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
@@ -292,12 +292,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://isme.fujiatian.com/hexo/2019/04/18/单例/">
+    <link itemprop="mainEntityOfPage" href="https://www.fujiatian.com/2019/04/18/单例/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="田园野望者">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/hexo/images/touxiang.jpg">
+      <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -340,8 +340,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/hexo/2019/04/18/单例/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/hexo/2019/04/18/单例/" itemprop="commentCount"></span>
+                <a href="/2019/04/18/单例/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/18/单例/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -478,7 +478,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/hexo/2019/04/07/云烟成雨/" rel="next" title="云烟成雨">
+              <a href="/2019/04/07/云烟成雨/" rel="next" title="云烟成雨">
                 <i class="fa fa-chevron-left"></i> 云烟成雨
               </a>
             
@@ -488,7 +488,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/hexo/2019/04/18/数据库索引/" rel="prev" title="数据库索引">
+              <a href="/2019/04/18/数据库索引/" rel="prev" title="数据库索引">
                 数据库索引 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -585,7 +585,7 @@ var jiathis_config={
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/hexo/images/touxiang.jpg" alt="田园野望者">
+              <img class="site-author-image" itemprop="image" src="/images/touxiang.jpg" alt="田园野望者">
             
               <p class="site-author-name" itemprop="name">田园野望者</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -596,7 +596,7 @@ var jiathis_config={
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/hexo/archives/">
+                <a href="/archives/">
               
                   <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
@@ -608,7 +608,7 @@ var jiathis_config={
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/hexo/categories/index.html">
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
@@ -619,7 +619,7 @@ var jiathis_config={
               
               
               <div class="site-state-item site-state-tags">
-                <a href="/hexo/tags/index.html">
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
@@ -793,64 +793,64 @@ var jiathis_config={
 
   
   
-    <script type="text/javascript" src="/hexo/lib/jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/hexo/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
   
 
   
   
-    <script type="text/javascript" src="/hexo/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
   
 
   
   
-    <script type="text/javascript" src="/hexo/lib/velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/hexo/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/hexo/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
-
-
-  
-
-
-  <script type="text/javascript" src="/hexo/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/hexo/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/hexo/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/hexo/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/hexo/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/hexo/js/src/post-details.js?v=5.1.4"></script>
-
 
 
   
 
 
-  <script type="text/javascript" src="/hexo/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
@@ -922,7 +922,7 @@ var jiathis_config={
     } else if (/json$/i.test(search_path)) {
       isXml = false;
     }
-    var path = "/hexo/" + search_path;
+    var path = "/" + search_path;
     // monitor main search box;
 
     var onPopupClose = function (e) {
